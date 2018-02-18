@@ -1,8 +1,0 @@
-# Build output
-.cache/
-
-# Dependencies
-node_modules/
-
-# Logs
-*.log*

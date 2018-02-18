@@ -7,7 +7,7 @@
 		"lint:style": "stylelint \"src/**/*.scss\"",
 		"lint": "yarn lint:es && yarn lint:style",
 		"format": "prettier-eslint --write \"**/*.{js,jsx,json,css,scss,md}\"",
-		"deploy": "gatsby build --prefix-paths && gh-pages -d public",
+		"deploy": "gatsby build --prefix-paths && gh-pages -d public"
 	},
 	"dependencies": {
 		"gatsby": "^1.9.175",

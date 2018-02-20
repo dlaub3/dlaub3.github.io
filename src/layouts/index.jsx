@@ -5,10 +5,10 @@ import Helmet from 'react-helmet';
 import Header from '../components/Header';
 import './index.css';
 
-const IndexLayout = ({ children }) => (
+const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Strict Starter"
+      title="Dan's web blog"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
@@ -27,9 +27,7 @@ const IndexLayout = ({ children }) => (
     </div>
   </div>
 );
-
-IndexLayout.propTypes = {
-  children: PropTypes.func.isRequired,
+TemplateWrapper.propTypes = {
+  children: PropTypes.func,
 };
-
-export default IndexLayout;
+export default TemplateWrapper;

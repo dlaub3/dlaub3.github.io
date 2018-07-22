@@ -40,10 +40,15 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: #4398d6;
+}
+a:visited {
+  color: #366e96;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: #46a8ef;
 }
 abbr[title] {
   border-bottom: none;

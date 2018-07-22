@@ -1,0 +1,729 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/component---src-layouts-index-jsx-a97c889a4b4d0e27b959.js" as="script"/><link rel="preload" href="/component---src-templates-posts-jsx-2d33398208371f469621.js" as="script"/><link rel="preload" href="/path---blog-posts-perl-practical-perl-primer-072af453ad3183c04686.js" as="script"/><link rel="preload" href="/app-f315a8173af9d67e12d4.js" as="script"/><link rel="preload" href="/commons-61689ac9f897bb0fcb2f.js" as="script"/><title data-react-helmet="true">Dan&#x27;s web blog</title><meta data-react-helmet="true" name="description" content="Sample"/><meta data-react-helmet="true" name="keywords" content="sample, something"/><style id="gatsby-inlined-css">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects;color:#4398d6}a:visited{color:#366e96}a:active,a:hover{outline-width:0;color:#46a8ef}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt","kern"}img{max-width:100%;margin:0 0 1.45rem;padding:0}h1{margin:3.5rem 0 1.45rem;font-size:2.25rem}h1,h2{padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{margin:0 0 1.45rem;font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{margin:0 0 1.45rem;padding:0}ol,ul{margin:0 0 1.45rem 1.45rem;padding:0;list-style-position:outside;list-style-image:none}dd,dl,figure,p{margin:0 0 1.45rem;padding:0}pre{padding:0;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}pre,table{margin:0 0 1.45rem}table{padding:0;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset{margin:0 0 1.45rem;padding:0}blockquote{margin:0 1.45rem 1.45rem;padding:0}form,iframe,noscript{margin:0 0 1.45rem;padding:0}hr{margin:0 0 calc(1.45rem - 1px);padding:0;background:rgba(0,0,0,.2);border:none;height:1px}address{margin:0 0 1.45rem;padding:0}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:0;padding-top:.2em;padding-bottom:.2em}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}.gatsby-highlight{background-color:#2d2d2d;color:#fff}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#7ec699}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#bd63c5}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#569cd6}.token.entity,.token.operator,.token.url{color:#9cdcfe}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:#ffeb34}.article-box{margin-bottom:1.5em;padding:2em;box-shadow:0 0 6px grey;font-family:Helvetica}.title{font-size:2em;color:grey;margin-bottom:0}.author,.date{margin:0}.date{color:#a5a4a4}.excerpt{margin-top:.6em}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="-2002380427"><!-- react-empty: 2 --><div style="background:rebeccapurple;margin-bottom:1.45rem;margin-top:0px;display:block;box-shadow:0px 0px 7px black;" data-reactid="3"><div style="margin:0 auto;max-width:960px;padding:1.45rem 1.0875rem;" data-reactid="4"><h1 style="margin:0;text-align:center;" data-reactid="5"><a style="color:white;text-decoration:none;" href="/" data-reactid="6">Dan&#x27;s Web Blog</a></h1></div></div><div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0;" data-reactid="7"><div data-reactid="8"><h1 data-reactid="9">Practical Perl Primer</h1><h4 style="color:rgb(165, 164, 164);" data-reactid="10"><span style="font-size:0.8em;" data-reactid="11"><!-- react-text: 12 --> -<!-- /react-text --><!-- react-text: 13 -->July 22nd, 2018<!-- /react-text --></span></h4><div data-reactid="14"><p>Documentation</p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># https://perldoc.perl.org/index-language.html</span>
+perldoc <span class="token operator">-f</span> chomp <span class="token comment"># perldoc on chomp</span>
+perldoc perlfaq</code></pre>
+      </div>
+<p>Misc</p>
+<ul>
+<li>
+<p>The semicolon is technically a separator, but it is good practice to use it as a terminator at the end of each line of code. </p>
+</li>
+<li>
+<p>Whitespace is mostly ignored.</p>
+<p>​</p>
+</li>
+</ul>
+<p>Variables and Values </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># represent a scalar value with $, Perl uses duck typeing for scalar value</span>
+<span class="token keyword">my</span> <span class="token variable">$n</span> <span class="token operator">=</span> <span class="token number">42</span><span class="token punctuation">;</span>
+
+<span class="token comment"># represent arrays with @</span>
+<span class="token keyword">my</span> <span class="token variable">@array</span> <span class="token operator">=</span> <span class="token string">qw(one two three four five)</span><span class="token punctuation">;</span>
+
+<span class="token comment"># represent hashes with %</span>
+<span class="token keyword">my</span> <span class="token variable">%hash</span> <span class="token operator">=</span> <span class="token punctuation">(</span>one <span class="token operator">=></span> <span class="token number">1</span><span class="token punctuation">,</span> two <span class="token operator">=></span> <span class="token number">2</span><span class="token punctuation">,</span> three <span class="token operator">=></span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment"># a list is a fixed series of scalar values. </span>
+<span class="token comment"># a list is not a data type, but it is used to create arrays and hashes in the examples above. </span>
+<span class="token comment"># a list is created with "()". </span>
+<span class="token comment"># a list is not mutable. </span>
+<span class="token comment"># it's possible to create references to lists.</span>
+<span class="token variable">$list</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">'one'</span><span class="token punctuation">,</span> <span class="token string">'one'</span><span class="token punctuation">,</span> <span class="token string">'three'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token variable">$var</span> <span class="token operator">=</span> <span class="token number">0</span> <span class="token operator">+</span> <span class="token variable">$var</span><span class="token punctuation">;</span> <span class="token comment"># force num </span>
+<span class="token variable">$var</span> <span class="token operator">=</span> <span class="token string">''</span> <span class="token operator">.</span> <span class="token variable">$var</span><span class="token punctuation">;</span> <span class="token comment"># force string</span></code></pre>
+      </div>
+<p>Statements and Expressions </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># expressions represent values</span>
+<span class="token keyword">my</span> <span class="token variable">$var</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+
+<span class="token comment"># statements instruct computers on how to execute code</span>
+<span class="token function"><span class="token keyword">sub</span> main</span> <span class="token punctuation">{</span>
+  <span class="token keyword">say</span> <span class="token string">"Hi"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+      </div>
+<p>Assignment Examples </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token keyword">my</span> <span class="token punctuation">(</span> <span class="token variable">$x</span><span class="token punctuation">,</span> $<span class="token regex">y, $z ) = ( 1, 2,</span> <span class="token number">3</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># assign multiple scalare variables from a list</span>
+
+<span class="token keyword">my</span> <span class="token variable">@array</span> <span class="token operator">=</span> <span class="token punctuation">(</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># create an array from a list</span>
+
+<span class="token keyword">my</span> <span class="token variable">$count</span> <span class="token operator">=</span> <span class="token variable">@array</span><span class="token punctuation">;</span> <span class="token comment"># assign the length of the array</span></code></pre>
+      </div>
+<p>Block and Scope</p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment">#!/usr/bin/perl</span>
+<span class="token keyword">use</span> <span class="token vstring string">5.18.0</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> warnings<span class="token punctuation">;</span>
+<span class="token keyword">use</span> strict<span class="token punctuation">;</span>
+
+<span class="token comment"># if there is no block the scope is the whole file. Perl is block scoped.</span>
+<span class="token keyword">my</span> <span class="token variable">$var</span> <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span> 
+
+<span class="token function"><span class="token keyword">sub</span> func</span> <span class="token punctuation">{</span>
+  <span class="token comment"># $var scope is locally to code block</span>
+  <span class="token keyword">my</span> <span class="token variable">$var</span> <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">my</span> <span class="token variable">$num</span> <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$num</span> <span class="token operator">></span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment"># $num2 is scoped to this code block </span>
+  <span class="token comment"># since that is where it's defined</span>
+  <span class="token keyword">my</span> <span class="token variable">$num2</span> <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+  
+  <span class="token comment"># $num can be used here </span>
+  <span class="token variable">$num</span> <span class="token operator">=</span> <span class="token variable">$num</span> <span class="token operator">+</span> <span class="token variable">$num2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment"># $num2 is out of variable scope</span>
+<span class="token keyword">say</span> <span class="token variable">$num2</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>Logical Values </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># false values: '', 0, []  in general things that are empty or evalute to 0</span>
+<span class="token comment"># everything else evaluates to true</span>
+<span class="token comment"># this is becuase of Perls duck typing.</span>
+https<span class="token punctuation">:</span><span class="token operator">//</span>perlmaven<span class="token operator">.</span>com<span class="token operator">/</span>boolean<span class="token operator">-</span>values<span class="token operator">-</span>in<span class="token operator">-</span>perl</code></pre>
+      </div>
+<p>Strings</p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token keyword">my</span> <span class="token variable">$s</span> <span class="token operator">=</span> <span class="token string">"I am a string"</span><span class="token punctuation">;</span>
+<span class="token keyword">say</span> <span class="token string">"s is [$s]"</span><span class="token punctuation">;</span>
+
+<span class="token comment">#string concatenation</span>
+$<span class="token regex">s .= " in a Perl expression";
+
+#string interpolation
+say "My name is String. $s .</span><span class="token string">";
+say "</span>My name is String<span class="token operator">.</span> <span class="token operator">\</span>"<span class="token variable">$s</span><span class="token operator">\</span>" <span class="token operator">.</span>"<span class="token punctuation">;</span>
+<span class="token keyword">say</span> <span class="token string">"My name is String. ${s}."</span><span class="token punctuation">;</span>
+<span class="token keyword">say</span> <span class="token string">qq(My name is String. $s .)</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>Arrays</p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token keyword">my</span> <span class="token variable">@array</span> <span class="token operator">=</span> <span class="token punctuation">(</span>one<span class="token punctuation">,</span> two<span class="token punctuation">,</span> three<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> <span class="token variable">@array</span><span class="token punctuation">;</span>
+<span class="token keyword">say</span> <span class="token variable">$array</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment"># the $ is used to reference a scalar value in the array.</span>
+
+<span class="token keyword">my</span> <span class="token variable">$count</span> <span class="token operator">=</span> <span class="token variable">@array</span><span class="token punctuation">;</span>
+push <span class="token variable">@array</span><span class="token punctuation">,</span> <span class="token string">qw(one two three)</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$item</span> <span class="token operator">=</span> pop <span class="token variable">@array</span><span class="token punctuation">;</span>
+
+<span class="token comment"># slices represent part of the whole</span>
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> <span class="token variable">@array</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token operator">...</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">@arr2</span> <span class="token operator">=</span> <span class="token variable">@array</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token variable">$ref</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment"># create a reference to an anonymous array.</span>
+<span class="token keyword">my</span> <span class="token variable">@arr</span> <span class="token operator">=</span> <span class="token string">qw( one, two, three, four )</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$ref</span> <span class="token operator">=</span> <span class="token operator">\</span><span class="token variable">@array</span><span class="token punctuation">;</span>
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> <span class="token variable">@</span><span class="token punctuation">{</span><span class="token variable">$ref</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment"># dereference the reference into the array it references</span></code></pre>
+      </div>
+<p>Hashes</p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># hash values are not stored in any predictable order</span>
+
+<span class="token comment"># create anonymous hash reference </span>
+<span class="token keyword">my</span> <span class="token variable">$ref</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    one <span class="token operator">=></span> <span class="token string">"one"</span><span class="token punctuation">,</span>
+    two <span class="token operator">=></span> <span class="token string">"two"</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment"># access element</span>
+<span class="token variable">$</span><span class="token punctuation">{</span><span class="token variable">$ref</span><span class="token punctuation">}</span><span class="token punctuation">{</span>one<span class="token punctuation">}</span>
+<span class="token variable">$ref</span><span class="token operator">-></span><span class="token punctuation">{</span>one<span class="token punctuation">}</span>
+
+<span class="token comment"># create a hash</span>
+<span class="token keyword">my</span> <span class="token variable">%hash</span> <span class="token operator">=</span> <span class="token punctuation">(</span>
+	one <span class="token operator">=></span> <span class="token string">'1'</span><span class="token punctuation">,</span>
+	two <span class="token operator">=></span> <span class="token string">'two'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">while</span> <span class="token punctuation">(</span> <span class="token keyword">my</span> <span class="token punctuation">(</span><span class="token variable">$k</span><span class="token punctuation">,</span> <span class="token variable">$v</span><span class="token punctuation">)</span> <span class="token operator">=</span> each <span class="token variable">%hash</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">say</span> <span class="token string">"$k -> $v"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">## refrence an anonymous function</span>
+<span class="token keyword">foreach</span> <span class="token keyword">my</span> <span class="token variable">$k</span> <span class="token punctuation">(</span>sort<span class="token punctuation">(</span>keys <span class="token variable">%hash</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">my</span> <span class="token variable">$v</span> <span class="token operator">=</span> <span class="token variable">$hash</span><span class="token punctuation">{</span><span class="token variable">$k</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">say</span> <span class="token string">"$k -> $v"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> keys <span class="token variable">%hash</span><span class="token punctuation">;</span>
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> values <span class="token variable">%hash</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>Constants  and Static Variables</p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># contants can be create in perl as follows</span>
+<span class="token keyword">use</span> contant <span class="token punctuation">{</span>
+  PIE <span class="token operator">=></span> <span class="token number">3.1415</span>
+  TRUE <span class="token operator">=></span> <span class="token number">1</span><span class="token punctuation">,</span> 
+  FALSE <span class="token operator">=></span> <span class="token string">''</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment"># The use constant is the same as the sub below. </span>
+<span class="token function"><span class="token keyword">sub</span> PIE</span> <span class="token punctuation">{</span> <span class="token number">3.1415</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+
+<span class="token comment"># Perl 5.10 + support static variabls </span>
+<span class="token keyword">use</span> feature <span class="token string">'state'</span><span class="token punctuation">;</span>
+<span class="token keyword">state</span> <span class="token variable">$n</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> <span class="token comment"># static variable will not be garbage collected for the entire runtime of the script. So if you use it in a function, consecutive function calls will remember the value.</span></code></pre>
+      </div>
+<p>Conditionals </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token keyword">if</span> <span class="token punctuation">(</span> <span class="token variable">$x</span> <span class="token operator">==</span> $<span class="token regex">y ) {
+  $x = $y;
+} elsif ( $x > $y ) {
+  # note the spelling 'elsif'
+ $x = 10;
+} else {
+  $x = 15;
+}
+
+# single line postifix if
+# can't use else 
+say 'true' if $x = 1;
+
+# unless 
+say 'true' unless $x = 1;
+
+# Don't do this 'given' and switches are generally discouraged.
+my $x;
+my $y;
+my $z;
+
+given($v)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">when</span> <span class="token punctuation">(</span><span class="token variable">$x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">say</span> <span class="token string">'x'</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+  <span class="token keyword">default</span> <span class="token punctuation">{</span> <span class="token keyword">say</span> <span class="token string">'default'</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># instead do this</span>
+<span class="token keyword">my</span> <span class="token variable">%hash</span> <span class="token operator">=</span> <span class="token punctuation">(</span> <span class="token variable">$x</span> <span class="token operator">=></span> <span class="token string">'x'</span><span class="token punctuation">,</span> <span class="token variable">$y</span> <span class="token operator">=></span> <span class="token string">'y'</span><span class="token punctuation">,</span> <span class="token variable">$z</span> <span class="token operator">=></span> <span class="token string">'z'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$hash</span><span class="token punctuation">{</span><span class="token variable">$x</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">say</span> <span class="token variable">$hash</span><span class="token punctuation">{</span><span class="token variable">$v</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token keyword">say</span> <span class="token string">'default'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># ternary if </span>
+<span class="token keyword">say</span> <span class="token variable">$x</span> <span class="token operator">></span> <span class="token variable">$y</span> <span class="token operator">?</span> <span class="token string">'x'</span> <span class="token punctuation">:</span> <span class="token string">'y'</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>Loops </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># iterate over a quote word list</span>
+<span class="token keyword">say</span> <span class="token keyword">foreach</span>  <span class="token string">qw(one two three)</span>
+
+<span class="token comment"># while </span>
+<span class="token keyword">my</span> <span class="token variable">@array</span> <span class="token operator">=</span> <span class="token string">qw( one two three four five )</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$count</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token variable">@array</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">say</span> shift <span class="token variable">@array</span><span class="token punctuation">;</span>
+  <span class="token variable">$y</span> <span class="token operator">=</span> shift <span class="token variable">@array</span><span class="token punctuation">;</span>
+  <span class="token keyword">next</span> <span class="token keyword">if</span> $<span class="token regex">y eq 20;
+  last if $y eq  5;
+} continue</span> <span class="token punctuation">{</span>
+	<span class="token variable">$count</span><span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># for</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">my</span> <span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token variable">$arr</span><span class="token punctuation">[</span><span class="token variable">$i</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token operator">++</span><span class="token variable">$i</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">say</span> <span class="token string">"$i: "</span> <span class="token operator">.</span> <span class="token variable">$arr</span><span class="token punctuation">[</span><span class="token variable">$i</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># foreach</span>
+<span class="token keyword">foreach</span> <span class="token keyword">my</span> <span class="token variable">$s</span> <span class="token punctuation">(</span><span class="token variable">@arr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">say</span> <span class="token variable">$s</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+      </div>
+<p>Default Variables </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># https://perldoc.perl.org/perlvar.html</span>
+<span class="token comment"># http://www.perlmonks.org/?node_id=353259</span>
+
+<span class="token keyword">foreach</span> <span class="token punctuation">(</span> <span class="token variable">@arr</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  says <span class="token variable">$_</span><span class="token punctuation">;</span>  <span class="token comment"># $_ optional value ommited will use the default variable $_</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> <span class="token variable">@arr</span><span class="token punctuation">;</span>
+
+func1<span class="token punctuation">(</span><span class="token string">'one'</span><span class="token punctuation">,</span> <span class="token string">'two'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function"><span class="token keyword">sub</span> func1</span> <span class="token punctuation">{</span>
+  <span class="token keyword">say</span> <span class="token string">'this is func1'</span><span class="token punctuation">;</span>
+  <span class="token keyword">say</span> <span class="token keyword">foreach</span> <span class="token variable">@_</span><span class="token punctuation">;</span>
+  <span class="token keyword">my</span> <span class="token punctuation">(</span><span class="token variable">$a</span><span class="token punctuation">,</span> <span class="token variable">$b</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token variable">@_</span><span class="token punctuation">;</span>
+  <span class="token comment"># push pop shift unshift all use the default array variable</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># system error variable </span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span> <span class="token operator">-e</span> <span class="token variable">$file</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">say</span> <span class="token string">"found"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token keyword">my</span> <span class="token variable">$error</span> <span class="token operator">=</span> <span class="token variable">$!</span><span class="token punctuation">;</span> <span class="token comment"># error variable </span>
+  <span class="token keyword">say</span> <span class="token variable">$error</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># env variables </span>
+<span class="token keyword">foreach</span> <span class="token keyword">my</span> <span class="token variable">$k</span> <span class="token punctuation">(</span>sort keys <span class="token variable">%ENV</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">say</span> <span class="token string">"$k = $ENV{$K}"</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> <span class="token variable">@ARGV</span><span class="token punctuation">;</span> <span class="token comment"># command-line arguments</span>
+
+<span class="token keyword">my</span> <span class="token variable">@numbers</span> <span class="token operator">=</span> <span class="token string">qw( 3 2 6 5 8 7 9 2 3 7 )</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">@numbers</span> <span class="token operator">=</span> sort <span class="token punctuation">{</span><span class="token variable">$a</span> <span class="token operator">&lt;=></span> <span class="token variable">$b</span><span class="token punctuation">}</span> <span class="token variable">@numbers</span><span class="token punctuation">;</span> <span class="token comment"># $a and $b are sort variables.</span>
+
+<span class="token keyword">say</span> <span class="token variable">$0</span>   <span class="token comment"># path of script </span>
+<span class="token keyword">say</span> <span class="token variable">$^</span>o<span class="token punctuation">;</span> <span class="token comment"># system name </span>
+<span class="token keyword">say</span> <span class="token variable">$^V</span><span class="token punctuation">;</span> <span class="token comment"># version of perl </span>
+
+<span class="token comment"># autoflush variable, the system flushes the buffer at it's own disgression </span>
+<span class="token variable">$|</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment"># this turns on outoflush </span></code></pre>
+      </div>
+<p>Operators </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># $x = 1 + 2;</span>
+<span class="token comment"># "" eq | ne ""</span>
+<span class="token comment"># 1 == 1</span>
+<span class="token comment"># % modulus returns the remainder of division</span>
+
+<span class="token comment"># compound assignment operator only evaluates once</span>
+<span class="token keyword">my</span> <span class="token variable">$x</span> <span class="token operator">+=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+
+<span class="token comment">## addition evaluates twice </span>
+<span class="token variable">$x</span> <span class="token operator">=</span> <span class="token variable">$x</span> <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">;</span>
+
+<span class="token comment">## relational Operators </span>
+<span class="token number">4</span> <span class="token operator">==</span> <span class="token number">6</span>
+<span class="token number">4</span> <span class="token operator">&lt;</span> <span class="token number">6</span>
+<span class="token number">4</span> <span class="token operator">></span> <span class="token number">6</span>
+<span class="token number">4</span> <span class="token operator">>=</span> <span class="token number">6</span>
+<span class="token punctuation">(</span><span class="token operator">!</span><span class="token number">4</span> <span class="token operator">||</span> <span class="token number">57</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+
+<span class="token comment"># string operators</span>
+<span class="token string">"str"</span> <span class="token operator">eq</span> <span class="token string">"str"</span>
+<span class="token string">"str"</span> <span class="token operator">ne</span> <span class="token string">"str"</span>
+<span class="token string">"str"</span> <span class="token operator">lt</span> <span class="token string">"str"</span>
+<span class="token string">"str"</span> <span class="token operator">le</span> <span class="token string">"str"</span> <span class="token comment"># less than or equal to</span>
+<span class="token string">"str"</span> <span class="token operator">gt</span> <span class="token string">"str"</span>
+
+<span class="token comment">## logical opperators</span>
+<span class="token keyword">use</span> constant <span class="token punctuation">{</span> TRUE <span class="token operator">=></span> <span class="token number">1</span><span class="token punctuation">,</span> FALSE <span class="token operator">=></span> <span class="token string">""</span> <span class="token punctuation">}</span>
+<span class="token operator">and</span> <span class="token comment">## ( true and true) == true</span>
+<span class="token operator">or</span>  <span class="token comment">## ( false and true) == true </span>
+<span class="token operator">xor</span> <span class="token comment">## one true the other false  (false and true) == true</span>
+<span class="token operator">not</span> <span class="token comment">## ( not FALSE or not True) == true</span>
+
+<span class="token comment">## File test operators </span>
+<span class="token comment"># see perldoc functions -X</span>
+<span class="token comment"># -s, non zero length</span>
+<span class="token comment"># -z, zero length</span>
+<span class="token comment"># -r, readable</span>
+<span class="token comment"># -w, writable</span>
+<span class="token comment"># -f, plain file </span>
+<span class="token comment"># -d, directory</span>
+<span class="token comment"># -e tests if file exists </span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">-e</span> <span class="token variable">$filename</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+
+<span class="token comment"># Range Operator </span>
+<span class="token comment"># numbers, letters, dates,</span>
+<span class="token comment"># The range operator returns a list and can be used to create arrays </span>
+<span class="token keyword">foreach</span> <span class="token keyword">my</span> <span class="token variable">$i</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">...</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">print</span> <span class="token string">"$i "</span><span class="token punctuation">:</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># String concatentation operator </span>
+<span class="token keyword">say</span> <span class="token string">"str"</span> <span class="token operator">.</span> <span class="token string">"ing"</span><span class="token punctuation">;</span> 
+
+<span class="token comment">## Quote operators </span>
+<span class="token keyword">say</span> <span class="token string">q(Hello World)</span><span class="token punctuation">;</span> <span class="token comment">## no interpolation single quote marks</span>
+<span class="token keyword">say</span> <span class="token string">qq()</span> <span class="token comment">## qq||, qq{} interprets variables like double quote </span>
+<span class="token keyword">say</span> <span class="token string">qw(one two three)</span> <span class="token comment">## returns a list </span>
+
+<span class="token comment"># Operator Precedence and Associativity</span>
+<span class="token comment"># https://perldoc.perl.org/perlop.html#Operator-Precedence-and-Associativity</span>
+<span class="token comment"># similar to mathematics</span></code></pre>
+      </div>
+<p>Context</p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># perl supports two contexts list and scalar</span>
+<span class="token keyword">my</span> <span class="token variable">@arr</span> <span class="token operator">=</span> <span class="token string">qw(one two three four five)</span><span class="token punctuation">;</span>
+<span class="token comment"># an array can be used in list context or scalar context </span>
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> <span class="token variable">@array</span><span class="token punctuation">;</span> <span class="token comment"># list context will iterate over each element. </span>
+<span class="token keyword">say</span> scalar <span class="token variable">@array</span><span class="token punctuation">;</span> <span class="token comment"># because we are accessing a scalar value it is the length of the arrays</span>
+
+<span class="token comment"># context is important as it affect how certain functions and structure bahave in perl. </span>
+
+<span class="token comment"># A sub can determine what context it was called in by using wantarray.</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span> wantarray<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">print</span> <span class="token string">"list\n"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># https://perlmaven.com/scalar-and-list-context-in-perl</span></code></pre>
+      </div>
+<p>Regular Expressions</p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># string replacement</span>
+<span class="token keyword">my</span> $<span class="token regex">s = qq{I am a string with -- words and :: other characters};
+$s =~ s/:/-/g;
+say $s;
+
+# string search
+my $s =</span> <span class="token string">"this is a line"</span>
+<span class="token keyword">my</span> <span class="token variable">$re</span> <span class="token operator">=</span> <span class="token regex">qr/line/</span><span class="token punctuation">;</span>
+<span class="token keyword">say</span> $<span class="token regex">s =~ $re ? "True" : "False";
+
+if ( $s =~ /line/i ) {
+}
+ 
+# extract a match 
+my $match =</span><span class="token operator">~</span> <span class="token regex">/(line)/</span><span class="token punctuation">;</span>
+
+<span class="token comment"># extract list of matches</span>
+<span class="token keyword">my</span> $<span class="token regex">s = "this is a string";
+my @match = $s =</span><span class="token operator">~</span> <span class="token regex">/i(.)/g</span><span class="token punctuation">;</span>
+
+
+
+<span class="token comment"># . 1 charater</span>
+<span class="token comment"># + 1 or more </span>
+<span class="token comment"># * 0 or more </span>
+<span class="token comment"># whildcard matching is greedy use *? to prevent greedy</span>
+<span class="token comment"># (tex?t) ? # optionally match the "t"</span>
+<span class="token comment"># \s whitespace</span>
+<span class="token comment"># \S not whitespace</span>
+<span class="token comment"># \d digit </span>
+<span class="token comment"># \D not digit </span>
+<span class="token comment"># \w word class characters</span>
+<span class="token comment"># \W none word characters</span>
+<span class="token comment"># [1234asdlk] anything in the brackets</span>
+<span class="token comment"># [1-9] 1-9,  [^1-9] not 1-9</span>
+<span class="token comment"># meta characters  {} [] () ^ $ . | * + ? \</span>
+<span class="token comment"># use "\" to escape meta characters</span>
+
+<span class="token comment"># https://perldoc.perl.org/perlre.html</span></code></pre>
+      </div>
+<p>Functions and Subroutines </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># Subroutines and Functions are essentially the same thing in perl </span>
+<span class="token comment"># Gernally, it's best to return a scalar, a list, or a reference  </span>
+<span class="token comment"># IMPORTANT: The context a function is called in will propogate to the return value of the function.So the context of the return value will be either scalar or list based on how the context of the function. </span>
+<span class="token comment"># A sub can determine what context it was called in by using wantarray.</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span> wantarray<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">print</span> <span class="token string">"list\n"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment"># Function names have global scope and they can be called before they are defined in a script.</span>
+<span class="token comment"># Functions always return. Either explicitly by calling return or the last statement executed will be implicitly returned. It's reccomended to always explicitly return</span>
+<span class="token comment"># Perl supportes closures and higher order functions and is considered a functional programming languages. </span>
+<span class="token comment"># https://hop.perl.plover.com/</span>
+<span class="token comment"># http://www.perlmonks.org/?node_id=450922</span>
+
+hello<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function"><span class="token keyword">sub</span> hello</span> <span class="token punctuation">{</span>
+	<span class="token keyword">say</span> <span class="token string">"Hello"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">say</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function"><span class="token keyword">sub</span> say</span> <span class="token punctuation">{</span>
+	<span class="token keyword">my</span> <span class="token variable">$word</span> <span class="token operator">=</span> shift<span class="token punctuation">;</span> <span class="token comment"># get variable from default array;</span>
+	<span class="token keyword">say</span> <span class="token variable">$word</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function"><span class="token keyword">sub</span> say</span> <span class="token punctuation">{</span>
+	<span class="token keyword">say</span> <span class="token keyword">foreach</span> <span class="token variable">@_</span><span class="token punctuation">;</span> <span class="token comment"># Get variables from default array </span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># function references </span>
+<span class="token keyword">my</span> <span class="token variable">$ref</span> <span class="token operator">=</span> <span class="token operator">\</span><span class="token variable">&amp;amp</span><span class="token punctuation">;</span>func<span class="token punctuation">;</span>
+
+<span class="token function"><span class="token keyword">sub</span> func</span> <span class="token punctuation">{</span>
+    <span class="token keyword">say</span> <span class="token string">"This is a func"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#either works</span>
+<span class="token variable">&amp;amp</span><span class="token punctuation">;</span><span class="token punctuation">{</span><span class="token variable">$ref</span><span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$ref</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">my</span> <span class="token variable">$ref</span> <span class="token operator">=</span> <span class="token keyword">sub</span> <span class="token punctuation">{</span> <span class="token keyword">say</span> <span class="token string">"anonymously, yours"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token variable">$ref</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment"># refrence an anonymous function  </span>
+<span class="token keyword">my</span> <span class="token variable">$ref</span> <span class="token operator">=</span> func<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$ref</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function"><span class="token keyword">sub</span> func</span> <span class="token punctuation">{</span>
+	<span class="token comment"># This is a closure in perl.</span>
+	<span class="token keyword">my</span> <span class="token variable">$s</span> <span class="token operator">=</span> <span class="token string">"I am a local variable"</span><span class="token punctuation">;</span>
+	return <span class="token keyword">sub</span> <span class="token punctuation">{</span> <span class="token keyword">say</span> <span class="token variable">$s</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+      </div>
+<p>References </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># References are smaller pieces of memory refer to larger pieces of memory. They are useful for working with arrays, hashes, and functions.</span>
+
+<span class="token keyword">my</span> <span class="token variable">@arr</span> <span class="token operator">=</span> <span class="token string">qw( one, two, three, four )</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$ref</span> <span class="token operator">=</span> <span class="token operator">\</span><span class="token variable">@array</span><span class="token punctuation">;</span>
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> <span class="token variable">@</span><span class="token punctuation">{</span><span class="token variable">$ref</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment"># dereference the reference into the array it references</span>
+
+<span class="token comment"># create a reference to an anonymous array</span>
+<span class="token keyword">my</span> <span class="token variable">$ref</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">qw( one, two, three, four )</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment"># parens alone creat an anonymous list </span>
+<span class="token variable">$ref</span> <span class="token operator">=</span> <span class="token punctuation">(</span> one<span class="token punctuation">,</span> two<span class="token punctuation">,</span> three<span class="token punctuation">,</span> four <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$ref</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment"># create anonymous hash reference </span>
+<span class="token keyword">my</span> <span class="token variable">$ref</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    one <span class="token operator">=</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span> <span class="token string">"one"</span><span class="token punctuation">,</span>
+    two <span class="token operator">=</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span> <span class="token string">"two"</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment"># access element</span>
+<span class="token variable">$</span><span class="token punctuation">{</span><span class="token variable">$ref</span><span class="token punctuation">}</span><span class="token punctuation">{</span>one<span class="token punctuation">}</span>
+<span class="token variable">$ref</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span><span class="token punctuation">{</span>one<span class="token punctuation">}</span>
+
+<span class="token comment"># function references </span>
+<span class="token keyword">my</span> <span class="token variable">$ref</span> <span class="token operator">=</span> <span class="token operator">\</span><span class="token variable">&amp;amp</span><span class="token punctuation">;</span>func<span class="token punctuation">;</span>
+
+<span class="token function"><span class="token keyword">sub</span> func</span> <span class="token punctuation">{</span>
+    <span class="token keyword">say</span> <span class="token string">"This is a func"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># either works</span>
+<span class="token variable">&amp;amp</span><span class="token punctuation">;</span><span class="token punctuation">{</span><span class="token variable">$ref</span><span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$ref</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">my</span> <span class="token variable">$ref</span> <span class="token operator">=</span> <span class="token keyword">sub</span> <span class="token punctuation">{</span> <span class="token keyword">say</span> <span class="token string">"anonymously, yours"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token variable">$ref</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment"># refrence an anonymous function </span>
+<span class="token keyword">my</span> <span class="token variable">$ref</span> <span class="token operator">=</span> func<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$ref</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function"><span class="token keyword">sub</span> func</span> <span class="token punctuation">{</span>
+	<span class="token comment"># this is a closure in perl.</span>
+	<span class="token keyword">my</span> <span class="token variable">$s</span> <span class="token operator">=</span> <span class="token string">"I am a local variable"</span><span class="token punctuation">;</span>
+	return <span class="token keyword">sub</span> <span class="token punctuation">{</span> <span class="token keyword">say</span> <span class="token variable">$s</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># finding a reference Type </span>
+<span class="token keyword">my</span> <span class="token variable">$r</span> <span class="token operator">=</span> <span class="token punctuation">[</span>one<span class="token punctuation">,</span> two<span class="token punctuation">,</span> three<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">say</span> ref<span class="token punctuation">(</span><span class="token variable">$r</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment"># will return 'ARRAY'		</span></code></pre>
+      </div>
+<p>File I/O </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># perl reads files as a stream </span>
+
+<span class="token comment"># &amp;lt; read</span>
+<span class="token comment"># + read and overwrite </span>
+<span class="token comment"># &amp;gt;&amp;gt; apend </span>
+
+<span class="token keyword">my</span> <span class="token variable">$filename</span> <span class="token operator">=</span> <span class="token string">"about.txt"</span><span class="token punctuation">;</span>
+open <span class="token punctuation">(</span><span class="token keyword">my</span> <span class="token variable">$fh</span><span class="token punctuation">,</span> '<span class="token variable">&amp;lt</span><span class="token punctuation">;</span><span class="token operator">&amp;</span><span class="token comment">#039;, $filename ) or die &amp;quot;Can&amp;#039;t open file: $!&amp;quot;;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token keyword">my</span> <span class="token variable">$line</span> <span class="token operator">=</span>  <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    chomp <span class="token variable">$line</span><span class="token punctuation">;</span> <span class="token comment"># chomp is great for getting line endings correct for your OS </span>
+    <span class="token keyword">say</span> <span class="token variable">$line</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+close <span class="token variable">$fh</span><span class="token punctuation">;</span>
+
+<span class="token comment"># It's better to use a scoped variable than a bare word for the file handle</span>
+<span class="token comment"># since that defaults to global</span>
+<span class="token comment"># A bareword is a word without quotes that Perl allows to behave as a string.</span>
+
+
+<span class="token comment"># The OO file interface </span>
+<span class="token keyword">use</span> <span class="token vstring string">5.18.0</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> warnings<span class="token punctuation">;</span>
+<span class="token keyword">use</span> IO<span class="token punctuation">:</span><span class="token punctuation">:</span>File<span class="token punctuation">;</span>
+
+<span class="token keyword">my</span> <span class="token variable">$filename</span> <span class="token operator">=</span> <span class="token string">'lines.txt'</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$file</span> <span class="token operator">=</span> IO<span class="token punctuation">:</span><span class="token punctuation">:</span>File<span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span>new<span class="token punctuation">(</span><span class="token string">"getline()) {
+    print $line;
+}
+say "</span>Done<span class="token string">";
+
+
+# Binary Files 
+
+use 5.18.0;
+use warnings;
+use IO::File;
+
+my $filename = 'pic.jpg';
+my $copyfilename = 'copypic.jpg' 
+
+my $file = IO::File-&amp;gt;new("</span>new<span class="token punctuation">(</span><span class="token string">"&amp;gt; $copyfilename"</span><span class="token punctuation">)</span> <span class="token operator">or</span> <span class="token keyword">die</span> <span class="token string">"Cannot open output file $!"</span><span class="token punctuation">;</span>
+
+
+<span class="token comment"># binmode is for Windows, mostly and it doesn't hurt anything if not needed.</span>
+<span class="token variable">$file</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span>binmode<span class="token punctuation">;</span>
+<span class="token variable">$copy</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span>binmode<span class="token punctuation">;</span>
+
+<span class="token keyword">my</span> <span class="token variable">$buffer</span><span class="token punctuation">;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token keyword">my</span> <span class="token variable">$len</span> <span class="token operator">=</span> <span class="token variable">$file</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span>read<span class="token punctuation">(</span><span class="token variable">$buffer</span><span class="token punctuation">,</span> <span class="token number">102400</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$copy</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token variable">$buffer</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">say</span> <span class="token string">"Done"</span><span class="token punctuation">;</span></code></pre>
+      </div>
+<p>Built In Functions </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># https://perldoc.perl.org/index-functions-by-cat.html</span>
+<span class="token comment"># string functions </span>
+<span class="token keyword">say</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment"># say outputs a new line at the end of the output Perl 5.10+</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># print and say default to sandard stream for their output </span>
+
+<span class="token keyword">my</span> <span class="token variable">@a</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">%h</span> <span class="token operator">=</span> <span class="token punctuation">(</span>one <span class="token operator">=</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span> <span class="token number">1</span><span class="token punctuation">,</span> two <span class="token operator">=</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span> <span class="token number">2</span><span class="token punctuation">,</span> three <span class="token operator">=</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">say</span> join <span class="token string">', '</span><span class="token punctuation">,</span> <span class="token variable">@a</span><span class="token punctuation">,</span> <span class="token variable">%h</span><span class="token punctuation">;</span>
+
+<span class="token keyword">say</span> join <span class="token string">':'</span><span class="token punctuation">,</span> <span class="token variable">@a</span><span class="token punctuation">;</span>
+
+$<span class="token regex">s = "This is a string with lots of words in it.";
+my @a = split /\s+/, $string;
+say join ':', @a;
+
+my $string =</span> <span class="token string">"This is a string"</span><span class="token punctuation">;</span>
+<span class="token keyword">say</span> length <span class="token variable">$string</span><span class="token punctuation">;</span>
+
+<span class="token keyword">say</span> chomp <span class="token variable">$string</span><span class="token operator">.</span> <span class="token comment"># removes line ending in string</span>
+
+<span class="token keyword">say</span> substr <span class="token variable">$string</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">;</span> <span class="token comment"># return a substing </span>
+<span class="token keyword">say</span> substr<span class="token punctuation">(</span><span class="token variable">$sring</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token string">'too'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># replace</span>
+
+<span class="token keyword">say</span> index <span class="token variable">$string</span><span class="token punctuation">,</span> <span class="token string">'is'</span><span class="token punctuation">;</span> <span class="token comment"># returns index of first occurance, 0 index.</span>
+<span class="token keyword">say</span> index <span class="token variable">$string</span><span class="token punctuation">,</span> <span class="token string">'xis'</span><span class="token punctuation">;</span> <span class="token comment"># returns -1 if not found</span>
+<span class="token keyword">say</span> index <span class="token variable">$string</span><span class="token punctuation">,</span> <span class="token string">'is'</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">;</span> <span class="token comment"># start matching after 10 characters.</span>
+<span class="token keyword">say</span> rindex <span class="token variable">$string</span><span class="token punctuation">,</span> <span class="token string">'is'</span><span class="token punctuation">;</span> <span class="token comment"># match from right</span>
+
+<span class="token keyword">say</span> reverse<span class="token punctuation">(</span><span class="token variable">$string</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># reverse a string or a list;</span>
+
+<span class="token keyword">say</span> lc <span class="token variable">$string</span><span class="token punctuation">;</span> <span class="token comment"># lowercase the string</span>
+<span class="token keyword">say</span> uc <span class="token variable">$string</span><span class="token punctuation">:</span> <span class="token comment"># uppercase string</span>
+<span class="token keyword">say</span> ucfirst <span class="token variable">$string</span><span class="token punctuation">;</span> <span class="token comment"># you get the idea</span>
+
+<span class="token comment"># numeric functions </span>
+<span class="token keyword">my</span> <span class="token variable">$a</span> <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$b</span> <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$x</span> <span class="token operator">=</span> <span class="token variable">$a</span> <span class="token operator">-</span> <span class="token variable">$b</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$x</span> <span class="token operator">=</span> abs <span class="token variable">$a</span> <span class="token operator">-</span> <span class="token variable">$b</span><span class="token punctuation">;</span>
+<span class="token variable">$x</span> <span class="token operator">=</span> sqrt <span class="token variable">$x</span><span class="token punctuation">;</span>
+<span class="token variable">$x</span> <span class="token operator">=</span> sqrt<span class="token punctuation">(</span><span class="token variable">$a</span><span class="token punctuation">)</span> <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token variable">$x</span> <span class="token operator">=</span> atan2<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">4</span><span class="token punctuation">;</span>
+<span class="token variable">$x</span> <span class="token operator">=</span> hex <span class="token string">'ff'</span><span class="token punctuation">;</span>
+<span class="token variable">$x</span> <span class="token operator">=</span> oct <span class="token string">'377'</span><span class="token punctuation">;</span>
+<span class="token variable">$x</span> <span class="token operator">=</span> int <span class="token variable">$a</span> <span class="token operator">/</span><span class="token number">7</span> <span class="token operator">+</span> <span class="token operator">.</span><span class="token number">5</span><span class="token punctuation">;</span> <span class="token comment"># returns integer portion </span>
+<span class="token keyword">my</span> <span class="token variable">$x</span> <span class="token operator">=</span> rand<span class="token punctuation">;</span> <span class="token comment"># rand b/t 0 and 1, first call to rand seeds the rand generator</span>
+<span class="token keyword">my</span> <span class="token variable">$x</span> <span class="token operator">=</span> rand <span class="token number">50</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$x</span> <span class="token operator">=</span> int rand <span class="token number">50</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$x</span> <span class="token operator">=</span> srand<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># seed the random number</span>
+
+
+<span class="token comment"># grep</span>
+<span class="token keyword">my</span> <span class="token variable">@a</span> <span class="token operator">=</span> <span class="token string">qw( two four six eight )</span><span class="token punctuation">;</span>
+
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> grep <span class="token regex">/one/</span><span class="token punctuation">,</span> <span class="token variable">@a</span><span class="token punctuation">;</span> <span class="token comment"># match elements in the array</span>
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> grep <span class="token operator">!</span><span class="token regex">/one/</span><span class="token punctuation">,</span> <span class="token variable">@a</span><span class="token punctuation">;</span> <span class="token comment"># don't match elements in the array</span>
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> grep <span class="token punctuation">{</span> <span class="token operator">!</span><span class="token regex">/one/</span> <span class="token punctuation">}</span> <span class="token variable">@a</span><span class="token punctuation">;</span> <span class="token comment"># don't match elements in the array</span>
+
+<span class="token comment"># map </span>
+<span class="token keyword">say</span> <span class="token keyword">foreach</span> map <span class="token punctuation">{</span> <span class="token variable">$_</span> <span class="token operator">*</span> <span class="token number">9</span> <span class="token punctuation">}</span> <span class="token variable">@a</span><span class="token punctuation">;</span>
+
+<span class="token comment"># time functions </span>
+<span class="token keyword">my</span> <span class="token variable">$t</span> <span class="token operator">=</span> time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># epoch time</span>
+<span class="token keyword">my</span> <span class="token variable">$timestring</span> <span class="token operator">=</span> localtime<span class="token punctuation">(</span><span class="token variable">$t</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">#convert epoch to a list of time or a string,</span>
+
+<span class="token comment"># formatting time</span>
+<span class="token comment"># time in perl is similar to the unix C liberary </span>
+<span class="token keyword">my</span> <span class="token punctuation">(</span><span class="token variable">$sec</span><span class="token punctuation">,</span> <span class="token variable">$min</span><span class="token punctuation">,</span> <span class="token variable">$hour</span><span class="token punctuation">,</span> <span class="token variable">$mday</span><span class="token punctuation">,</span> <span class="token variable">$mon</span><span class="token punctuation">,</span> <span class="token variable">$year</span><span class="token punctuation">,</span> <span class="token variable">$wday</span><span class="token punctuation">,</span> <span class="token variable">$yday</span><span class="token punctuation">,</span> <span class="token variable">$isdst</span> <span class="token punctuation">)</span> <span class="token operator">=</span> localtime<span class="token punctuation">(</span><span class="token variable">$t</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$mon</span> <span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment"># helps with 0 based </span>
+<span class="token variable">$year</span> <span class="token operator">+=</span> <span class="token number">1900</span><span class="token punctuation">;</span> <span class="token comment"># the year needs to have this added since it's an orbitol year</span>
+
+<span class="token comment"># add leading zeros to numerics for display </span>
+<span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$mon</span><span class="token punctuation">,</span> <span class="token variable">$mday</span><span class="token punctuation">,</span> <span class="token variable">$hour</span><span class="token punctuation">,</span> <span class="token variable">$min</span><span class="token punctuation">,</span> <span class="token variable">$sec</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token variable">$_</span> <span class="token operator">=</span> <span class="token string">"0$_"</span> <span class="token keyword">if</span> <span class="token variable">$_</span> <span class="token punctuation">{</span>number<span class="token punctuation">}</span> <span class="token operator">=</span> shift <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    return <span class="token variable">$self</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function"><span class="token keyword">sub</span> number</span> <span class="token punctuation">{</span>
+    <span class="token keyword">my</span> <span class="token variable">$self</span> <span class="token operator">=</span> shift<span class="token punctuation">;</span>
+    <span class="token variable">$self</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span><span class="token punctuation">{</span>number<span class="token punctuation">}</span> <span class="token operator">=</span> shift <span class="token keyword">if</span> <span class="token variable">@_</span><span class="token punctuation">;</span>
+    return <span class="token variable">$self</span><span class="token operator">-</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span><span class="token punctuation">{</span>number<span class="token punctuation">}</span> <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function"><span class="token keyword">sub</span> version</span> <span class="token punctuation">{</span>
+	shift<span class="token punctuation">;</span>
+	return <span class="token variable">$VERSION</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment"># for compatability, end with a true value</span>
+
+<span class="token comment">## End example module Simple.pm </span></code></pre>
+      </div>
+<p>Best Practices </p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token comment"># use ending semicolons </span>
+<span class="token comment"># consistently format code blocks</span>
+<span class="token comment"># consistently name things</span>
+<span class="token comment"># perl best practice is lowercase variable names</span>
+
+<span class="token keyword">my</span> <span class="token variable">$variable_name</span><span class="token punctuation">;</span>
+Package DL<span class="token punctuation">:</span><span class="token punctuation">:</span>Class<span class="token punctuation">;</span>
+
+<span class="token keyword">my</span> <span class="token variable">$object</span> <span class="token operator">=</span> DL<span class="token punctuation">:</span><span class="token punctuation">:</span>Class<span class="token punctuation">;</span>
+
+CONSTANT_NAME
+<span class="token comment"># use constants wherever you would use them in another language </span>
+
+<span class="token keyword">use</span> constant <span class="token punctuation">{</span>
+    TRUE <span class="token operator">=</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    FALSE <span class="token operator">=</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span> <span class="token string">""</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> constant DEBUG <span class="token operator">=</span><span class="token variable">&amp;gt</span><span class="token punctuation">;</span> TRUE<span class="token punctuation">;</span>
+
+<span class="token function"><span class="token keyword">sub</span> func_name</span> <span class="token punctuation">{</span> <span class="token operator">...</span><span class="token operator">.</span> <span class="token punctuation">}</span>
+
+<span class="token comment"># use simple terse comments and whitespace </span>
+<span class="token comment"># strict mode is on by default in perl 5.18.0 + </span>
+<span class="token comment"># use warnings is optional </span>
+<span class="token comment"># you can use 'no warnings' inside of a sub routine </span>
+<span class="token comment"># Try not to use the 'local' keyword. </span>
+<span class="token keyword">local</span> <span class="token comment">#temp assigns a new value to a global variable and is a relic </span></code></pre>
+      </div>
+<p>Text Input</p>
+<div class="gatsby-highlight" data-language="perl">
+      <pre class="perl"><code class="perl"><span class="token keyword">use</span> feature <span class="token string">'say'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">say</span> <span class="token string">"This is your last chance. What will it be, the red pill or the blue?"</span><span class="token punctuation">;</span>
+<span class="token keyword">say</span> <span class="token string">'...'</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$answer</span> <span class="token operator">=</span> <span class="token punctuation">;</span>
+chop <span class="token variable">$answer</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$answer</span> <span class="token operator">=~</span> <span class="token regex">/blue/i</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">say</span> <span class="token string">"The story is ends here for you."</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">elsif</span> <span class="token punctuation">(</span><span class="token variable">$answer</span> <span class="token operator">=~</span> <span class="token regex">/red/i</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">say</span> <span class="token string">"You stay in Wonderland."</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+	<span class="token keyword">say</span> <span class="token string">"Agent Smith, you'll never win."</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+      </div>
+<p>References  And Further Reading</p>
+<p>Most of these notes are from Bill Weinman's course on Lynda.com </p>
+<p>Bill Weinman <a href="http://perl.bw.org">http://perl.bw.org</a></p>
+<p>Lynda.com <a href="https://www.lynda.com/Perl-tutorials/Perl-5-Essential-Training/447321-2.html">https://www.lynda.com/Perl-tutorials/Perl-5-Essential-Training/447321-2.html</a></p>
+<p><a href="https://www.thegeekstuff.com/2010/01/20-killer-perl-programming-tips-for-beginners-on-unix-linux-os">https://www.thegeekstuff.com/2010/01/20-killer-perl-programming-tips-for-beginners-on-unix-linux-os</a></p>
+<p><a href="https://perlmaven.com">https://perlmaven.com</a></p>
+<p><a href="https://learn.perl.org/docs/keywords.html#perlvar">https://learn.perl.org/docs/keywords.html#perlvar</a></p>
+<p><a href="https://stackoverflow.com/questions/6162484/why-does-modern-perl-avoid-utf-8-by-default">https://stackoverflow.com/questions/6162484/why-does-modern-perl-avoid-utf-8-by-default</a></p></div></div></div></div></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-f315a8173af9d67e12d4.js","230013016654144":"component---src-templates-posts-jsx-2d33398208371f469621.js","183328146348521":"component---src-pages-404-jsx-4503918ea3a16cfcdb75.js","213534597649335":"component---src-pages-index-jsx-4970b251fe00be4d6fae.js","60335399758886":"path----557518bd178906f8d58a.js","228675834279552":"path---blog-posts-ecmascript-es-6-notes-ef3f0c114433abe87b73.js","146245068098138":"path---blog-posts-php-include-vs-require-7119b73cb5ac8a8be9e8.js","273808376067014":"path---blog-posts-php-strict-data-types-in-php-125ca476b65975da1e8e.js","101223163826097":"path---blog-posts-perl-practical-perl-primer-072af453ad3183c04686.js","254022195166212":"path---404-a0e39f21c11f6a62c5ab.js","142629428675168":"path---index-33e3b55dfd6fc038fdc6.js","178698757827068":"path---404-html-a0e39f21c11f6a62c5ab.js","79611799117203":"component---src-layouts-index-jsx-a97c889a4b4d0e27b959.js"}/*]]>*/</script><script>/*<![CDATA[*/!function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",["/commons-61689ac9f897bb0fcb2f.js","/app-f315a8173af9d67e12d4.js","/path---blog-posts-perl-practical-perl-primer-072af453ad3183c04686.js","/component---src-templates-posts-jsx-2d33398208371f469621.js","/component---src-layouts-index-jsx-a97c889a4b4d0e27b959.js"])/*]]>*/</script></body></html>

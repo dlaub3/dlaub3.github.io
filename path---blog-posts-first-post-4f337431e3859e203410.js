@@ -1,2 +1,0 @@
-webpackJsonp([0xcb609e20a235],{321:function(t,a){t.exports={data:{markdownRemark:{html:"<p>Just getting started with github pages and Gatsby.</p>",frontmatter:{title:"This is Dan's Blog",author:"Daniel Laubacher",date:"2018-02-19"}}},pathContext:{slug:"/blog-posts/first-post/"}}}});
-//# sourceMappingURL=path---blog-posts-first-post-4f337431e3859e203410.js.map

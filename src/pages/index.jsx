@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import './index.css';
 
 const IndexPage = ({ data }) => {
-  console.log(data);
+
   return (
     <div>
       {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -14,7 +14,6 @@ const IndexPage = ({ data }) => {
           >
             <h3 className="title">{node.frontmatter.title}</h3>
           </Link>
-          <p className="author">{node.frontmatter.author}</p>
           <p className="date">
             {node.frontmatter.date} {node.timeToRead}min read
           </p>
@@ -28,7 +27,13 @@ export default IndexPage;
 
 export const query = graphql`
   query HomePageQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {
+        frontmatter: { draft: { ne: true } }
+        fileAbsolutePath: {regex: "/^(?!.*_index)/"}
+      }
+    ) {
       totalCount
       edges {
         node {
@@ -37,8 +42,7 @@ export const query = graphql`
           }
           frontmatter {
             title
-            date
-            author
+            date(formatString: "MMMM Do, YYYY")
           }
           excerpt
           timeToRead

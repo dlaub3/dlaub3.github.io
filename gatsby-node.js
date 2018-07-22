@@ -27,17 +27,38 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allMarkdownRemark {
-          edges {
-            node {
+        allMarkdownRemark(
+          sort: { order: DESC, fields: [frontmatter___date] }
+                limit: 1000
+                filter: {
+                  frontmatter: { draft: { ne: true } }
+                  fileAbsolutePath: {regex: "/^(?!.*_index)/"}
+                }
+          )
+        {
+          edges
+          {
+            node
+            {
               fields {
                 slug
+              }
+              html
+              frontmatter
+              {
+                title
+                date(formatString: "MMMM DD YYYY")
+                tags
               }
             }
           }
         }
       }
-    `).then((result) => {
+    `).then(result => {
+      if (result.errors) {
+        return Promise.reject(result.errors);
+      }
+
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,

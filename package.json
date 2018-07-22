@@ -11,6 +11,7 @@
 	},
 	"dependencies": {
 		"gatsby": "^1.9.175",
+		"gatsby-cli": "^1.1.58",
 		"gatsby-link": "^1.6.35",
 		"gatsby-plugin-react-helmet": "^2.0.4",
 		"gatsby-source-filesystem": "^1.5.20",
@@ -18,16 +19,16 @@
 		"react-helmet": "^5.2.0"
 	},
 	"devDependencies": {
-		"eslint": "^4.16.0",
-		"eslint-config-airbnb": "^16.1.0",
+		"eslint": "^5.2.0",
+		"eslint-config-airbnb": "^17.0.0",
 		"eslint-plugin-import": "^2.8.0",
 		"eslint-plugin-jsx-a11y": "^6.0.3",
 		"eslint-plugin-react": "^7.6.1",
 		"gh-pages": "^1.1.0",
 		"prettier-eslint-cli": "^4.7.0",
-		"stylelint": "^8.4.0",
+		"stylelint": "^9.3.0",
 		"stylelint-config-idiomatic-order": "^5.0.0",
 		"stylelint-config-recommended-scss": "^3.0.0",
-		"stylelint-scss": "^2.3.0"
+		"stylelint-scss": "^3.2.0"
 	}
 }

@@ -1,0 +1,3 @@
+[submodule "src/blog-posts"]
+	path = src/blog-posts
+	url = git@github.com:dlaub3/blog.git

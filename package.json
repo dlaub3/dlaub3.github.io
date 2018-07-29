@@ -14,6 +14,7 @@
 		"gatsby-cli": "^1.1.58",
 		"gatsby-link": "^1.6.35",
 		"gatsby-plugin-react-helmet": "^2.0.4",
+		"gatsby-remark-embed-gist": "^1.1.2",
 		"gatsby-remark-prismjs": "^2.0.5",
 		"gatsby-source-filesystem": "^1.5.20",
 		"gatsby-transformer-remark": "^1.7.44",

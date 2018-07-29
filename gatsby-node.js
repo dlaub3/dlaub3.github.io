@@ -29,23 +29,19 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-                limit: 1000
-                filter: {
-                  frontmatter: { draft: { ne: true } }
-                  fileAbsolutePath: {regex: "/^(?!.*_index)/"}
-                }
-          )
-        {
-          edges
-          {
-            node
-            {
+          limit: 1000
+          filter: {
+            frontmatter: { draft: { ne: true } }
+            fileAbsolutePath: { regex: "/^(?!.*_index)/" }
+          }
+        ) {
+          edges {
+            node {
               fields {
                 slug
               }
               html
-              frontmatter
-              {
+              frontmatter {
                 title
                 date(formatString: "MMMM DD YYYY")
                 tags
@@ -54,7 +50,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
         }
       }
-    `).then(result => {
+    `).then((result) => {
       if (result.errors) {
         return Promise.reject(result.errors);
       }
